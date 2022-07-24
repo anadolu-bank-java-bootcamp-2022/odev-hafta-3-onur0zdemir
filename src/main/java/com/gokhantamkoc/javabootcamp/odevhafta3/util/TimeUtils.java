@@ -7,7 +7,6 @@ import java.util.Date;
 public class TimeUtils {
     private final static SimpleDateFormat UTC_DATE = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
-<<<<<<< HEAD
     public static long convertToMillisTime(String time) {
         long timeMillis = 0;
         long hours = Long.parseLong(time.substring(0, 2));
@@ -24,21 +23,6 @@ public class TimeUtils {
     public static Date convertToDate(long millis) {
         // Bu metodu doldurmanizi bekliyoruz.
         return new Date(millis);
+
     }
-=======
-	public static Date convertToDate(long millis) {
-		// Bu metodu doldurmanizi bekliyoruz.
-
-        Calendar calendarWithUserTz = null;
-        Calendar cal = calendarWithUserTz;
-        cal.setTimeInMillis(millis);
-        cal.set(Calendar.HOUR_OF_DAY, 0);
-        cal.set(Calendar.MINUTE, 0);
-        cal.set(Calendar.SECOND, 0);
-        cal.set(Calendar.MILLISECOND, 0);
-
-        return new Date(cal.getTimeInMillis());
-
-	}
->>>>>>> refs/remotes/origin/master
 }
