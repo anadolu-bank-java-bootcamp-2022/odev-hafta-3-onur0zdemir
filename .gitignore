@@ -9,5 +9,12 @@
 .classpath
 bin/
 
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+
 # Java
 target/
